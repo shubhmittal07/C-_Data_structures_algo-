@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "d:\\Data_structures_and_Algo C++",
+      "environment": [],
+      "program": "d:\\Data_structures_and_Algo C++\\build\\Debug\\outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\CodeBlocks\\MinGW\\bin\\gdb.exe",
+      "externalConsole": true
+    }
+  ]
+}
