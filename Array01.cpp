@@ -38,6 +38,31 @@ public:
         m_size++;
         m_arr[m_size-1] = element;
     }
+    int BinarySearch(int element)
+    {
+        int lower_bound=0,upper_bound=m_size-1;
+        int middle_bound;
+        while(lower_bound<=upper_bound)
+        {
+            middle_bound = (lower_bound+upper_bound)/2;
+            if(element==m_arr[middle_bound])
+            {
+                std::cout<<"Element found at index: "<<middle_bound<<std::endl;
+                return middle_bound;
+            }
+            else if(element>m_arr[middle_bound])
+            {
+                lower_bound = middle_bound+1;
+            }
+            else
+            {
+                upper_bound = middle_bound-1;
+            }
+        }
+        std::cout<<"Element not found";
+        return -1;
+        
+    }
     ~Array()
     {
         if(m_arr!=NULL)
@@ -61,5 +86,6 @@ int main()
     arr.Display();
     arr.insert(6);
     arr.Display();
+    arr.BinarySearch(5);
 
 }
