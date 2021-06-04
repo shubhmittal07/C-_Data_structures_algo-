@@ -20,5 +20,9 @@ int main()
     {
         std::cout<<v<<std::endl;
     }
+    // for(int i=0;i<vertices.size();i++)
+    // {
+    //     std::cout<<vertices[i]<<std::endl;
+    // }
     return 0;
 }
