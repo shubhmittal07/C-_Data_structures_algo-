@@ -24,5 +24,7 @@ int main()
     // {
     //     std::cout<<vertices[i]<<std::endl;
     // }
+
+    vertices.erase(vertices.begin()+1); //code to remove second element
     return 0;
 }
