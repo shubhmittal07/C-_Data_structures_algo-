@@ -16,15 +16,16 @@ int main()
     std::vector<Vertex> vertices;
     vertices.push_back({1,2,3});
     vertices.push_back({4,5,6});
+    std::vector<Vertex> vertices2(vertices); //copy constructor for vector
     for(Vertex& v:vertices)
     {
         std::cout<<v<<std::endl;
     }
-    // for(int i=0;i<vertices.size();i++)
-    // {
-    //     std::cout<<vertices[i]<<std::endl;
-    // }
-
-    vertices.erase(vertices.begin()+1); //code to remove second element
+    for(Vertex& v:vertices2)
+    {
+        std::cout<<v<<std::endl;
+    }
+    vertices.erase(vertices.begin()); //code to remove second element
+    std::cout<<"Capacity: "<<vertices.capacity()<<std::endl;
     return 0;
 }
