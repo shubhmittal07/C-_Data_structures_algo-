@@ -25,9 +25,11 @@ std::ostream& operator<<(std::ostream& stream,const Vertex& vertex)
 int main()
 {
     std::vector<Vertex> vertices;
-    vertices.reserve(3);
+    vertices.reserve(10); // it is simply predefining and presetting the capacity of the vector
     vertices.emplace_back(1,2,3);
-    vertices.emplace_back(4,5,6);
-    vertices.emplace_back(4,5,6);
+    // vertices.emplace_back(4,5,6);
+    // vertices.emplace_back(4,5,6);
+    std::cout<<"Size of vector is:"<<vertices.size()<<std::endl;
+    std::cout<<"Capacity of vector is:"<<vertices.capacity()<<std::endl;
     return 0;
 }
