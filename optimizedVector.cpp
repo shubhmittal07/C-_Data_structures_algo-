@@ -25,8 +25,9 @@ std::ostream& operator<<(std::ostream& stream,const Vertex& vertex)
 int main()
 {
     std::vector<Vertex> vertices;
-    vertices.push_back(Vertex(1,2,3));
-    vertices.push_back(Vertex(4,5,6));
-    vertices.push_back(Vertex(4,5,6));
+    vertices.reserve(3);
+    vertices.emplace_back(Vertex(1,2,3));
+    vertices.emplace_back(Vertex(4,5,6));
+    vertices.emplace_back(Vertex(4,5,6));
     return 0;
 }
