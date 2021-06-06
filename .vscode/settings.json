@@ -45,6 +45,7 @@
     "typeinfo": "cpp",
     "numeric": "cpp",
     "functional": "cpp",
-    "iterator": "cpp"
+    "iterator": "cpp",
+    "valarray": "cpp"
   }
 }
